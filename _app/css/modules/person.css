@@ -1,0 +1,46 @@
+.person-list {
+	display: flex;
+	justify-content: center;
+}
+
+.person-list__container {
+	display: flex;
+	flex-direction: column;
+}
+
+.person-card {
+	position: relative;
+	width: 32.6rem;
+}
+
+.card-list__container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 5rem;
+}
+
+.person-list__title {
+	display: flex;
+	justify-content: center;
+}
+
+.person-list__title>h1 {
+	font-size: 4rem;
+}
+
+.person-card>img {
+	width: 100%;
+}
+
+.person-info {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	bottom: 10%;
+	left: 0;
+	color: white;
+	font-size: 3rem;
+
+}
