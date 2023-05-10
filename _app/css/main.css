@@ -1,0 +1,8 @@
+@import 'reset.css';
+@import 'variables.css';
+@import 'fonts.css';
+@import 'base.css';
+
+@import './modules/header.css';
+@import './modules/buttons.css';
+@import './modules/frontpage.css';

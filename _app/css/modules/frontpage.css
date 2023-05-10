@@ -1,0 +1,34 @@
+.frontpage__image-container {
+	position: absolute;
+}
+
+.frontpage__background-black {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+}
+
+.frontpage__background-image {
+	width: 100vw;
+}
+
+.frontpage__info {
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	margin: 20rem 3rem;
+	color: white;
+	gap: 1rem;
+	
+}
+
+.info__title{
+	font-size: 4rem;
+}
+
+.info__text{
+	font-size: 2.6rem;
+	width: 70%;
+}

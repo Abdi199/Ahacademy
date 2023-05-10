@@ -1,8 +1,18 @@
 .header {
+	display: flex;
+	justify-content: space-between;
+	padding: 1.5rem 1rem;
+	background-color: transparent;
 }
 
 .header__navigation {
+	display: flex;
+	justify-content: end;
+	align-items: center;
 }
 
-.header__navigation--visible {
+.header__navigation-list {
+	display: flex;
+	gap: 1rem;
+	font-size: 3rem;
 }
