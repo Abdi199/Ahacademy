@@ -6,7 +6,8 @@ export default {
 		{
 			title: 'Name',
 			name: 'name',
-			type: 'string'
+			type: 'string',
+			validation: Rule => Rule.required()
 		},
 		{
 			title: 'Age',
@@ -29,11 +30,29 @@ export default {
 			type: 'string',
 			options: {
 				list: [
-					{ title: 'Coach', value: 'coach' },
-					{ title: 'Player', value: 'player' },
+					{ title: 'Coach', value: 'Coach' },
+					{ title: 'Player', value: 'Player' },
 				],
 				layout: 'radio'
+			},
+			validation: Rule => Rule.required()
+		}
+	],
+
+	preview: {
+		select: {
+			name: 'name',
+			image: 'image',
+			position: 'position',
+			occupation: 'occupation',
+		},
+
+		prepare: (fields) => {
+			return {
+				title: fields.name,
+				subtitle: `${fields.occupation}, ${fields.position}`,
+				media: fields.image
 			}
 		}
-	]
+	}
 }
