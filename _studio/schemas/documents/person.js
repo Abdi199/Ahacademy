@@ -36,6 +36,11 @@ export default {
 				layout: 'radio'
 			},
 			validation: Rule => Rule.required()
+		},
+		{
+			title: 'Priority',
+			name: 'priority',
+			type: 'number',
 		}
 	],
 
