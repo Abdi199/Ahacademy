@@ -1,6 +1,8 @@
 .person-list {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	margin: 0rem 1rem 4rem;
 }
 
 .person-list__container {
@@ -15,13 +17,16 @@
 
 .card-list__container {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 5rem;
+	justify-items: center;
+	grid-template-columns: repeat(auto-fit, minmax(32.6rem, 1fr));
+	grid-gap: 5rem;
+	grid-auto-flow: dense;
 }
 
 .person-list__title {
 	display: flex;
 	justify-content: center;
+	margin-bottom: 2rem;
 }
 
 .person-list__title>h1 {
@@ -41,6 +46,29 @@
 	bottom: 10%;
 	left: 0;
 	color: white;
-	font-size: 3rem;
+	
+}
 
+.person-name {
+	font-size: 1.8rem;
+}
+
+.person-position {
+	font-size: 1.4rem;
+}
+
+.person-list__search-container {
+	display: flex;
+	justify-content: center;
+}
+
+.person-list__search-container>input {
+	border: 1px solid black;
+	border-radius: 5px;
+	font-size: 2rem;
+	padding: 0.5rem;
+}
+
+.person-card--hidden {
+	display: none;
 }

@@ -4,8 +4,13 @@ export default function getBySearch(persons) {
 	const searchField = document.querySelector('.search-input');
 	const searchButton = document.querySelector('.search-button');
 
-	searchField.addEventListener('keyup', handleInputSearch);
-	searchButton.addEventListener('click', handleButtonSearch);
+	if (searchField) {
+		searchField.addEventListener('keyup', handleInputSearch);
+	}
+
+	if (searchButton) {
+		searchButton.addEventListener('click', handleButtonSearch);
+	}
 
 	function handleInputSearch() {
 		const searchValue = getSearchValue()
@@ -32,7 +37,6 @@ export default function getBySearch(persons) {
 	const debounce = (func, wait) => {
 		let timeout; 
 		
-		console.log('hei')
 		return function executedFunction(...args) {
 			const later = () => {
 				clearTimeout(timeout);
