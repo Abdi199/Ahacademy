@@ -38,7 +38,8 @@ The page is used with these technologies:
 - Netlify
 ## Database Model
 
-![Database Model](https://raw.githubusercontent.com/Abdi199/Ahacademy/main/_app/assets/images/database-model.png?token=GHSAT0AAAAAAB7NXWTSPHI7GB7PI2ABKO2WZDYKJNQ)
+![Database Model](/_app/assets/images/database-model.png)
+
 ## Demo
 
 You can visit the live page [here](https://ah-academy.netlify.app/).
