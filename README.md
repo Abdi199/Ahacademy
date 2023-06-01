@@ -10,6 +10,7 @@ This project shows a list of players and coaches in the AH Academy, fetched with
 
 - [Features](#features)
 - [Techonolgy](#technology)
+- [MVP](#mvp)
 - [Database Model](#database-model)
 - [Demo](#demo)
 
@@ -28,7 +29,6 @@ Some of the feature on this site are:
 - Contact button
 
 
-
 ## Technology
 The page is used with these technologies:
 - HTML
@@ -36,6 +36,12 @@ The page is used with these technologies:
 - JavaScript
 - Sanity
 - Netlify
+
+
+## MVP
+This is a MoSCoW method sketch of prioritization of the MVP.
+![MoSCoW](/_app/assets/images/MoSCoW.png)
+
 ## Database Model
 
 ![Database Model](/_app/assets/images/database-model.png)
