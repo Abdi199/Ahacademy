@@ -16,54 +16,59 @@
 			</a>
 			<nav class="header__navigation">
 				<ul class="header__navigation-list">
-					<li><a class="button-transparent" href="/events-calendar">Events Calendar</a></li>
-					<li><a class="button-transparent" href="/programs">Programs</a></li>
+					<li><a class="button-transparent" href="https://www.nfacademy.com/events/">Events Calendar</a></li>
 					<li><a class="button-transparent" href="/coaches">Coaches</a></li>
 					<li><a class="button-transparent" href="/players">Players</a></li>
 				</ul>
 			</nav>
+
+			<button class="header__menu-button">
+				<img src="/_app/assets/svg/menu.svg" alt="Open menu">
+			</button>
 		</header>
 
 		<main class="person-list coaches-main">
+			<div class="person-list__search-container">
+				<input class="search-input" id="search" placeholder="search" type="text">
+				<button class="search-button">Search</button>
+			</div>
+
 			<div class="person-list__container">
 				<div class="person-list__title ">
 					<h1>Coaches</h1>
 				</div>
 
 				<div class="card-list__container coaches___card-container">
-					<div class="person-card">
-						<img src="/_app/assets/portraits/emanuel-mesquita.jpg" alt="">
-						<div class="person-info">
-							<p class="person-name">name</p>
-							<p class="person-position">position</p>
-						</div>
-					</div>
-
-					<div class="person-card">
-						<img src="/_app/assets/portraits/emanuel-mesquita.jpg" alt="">
-						<div class="person-info">
-							<p class="person-name">name</p>
-							<p class="person-position">position</p>
-						</div>
-					</div>
-
-					<div class="person-card">
-						<img src="/_app/assets/portraits/emanuel-mesquita.jpg" alt="">
-						<div class="person-info">
-							<p class="person-name">name</p>
-							<p class="person-position">position</p>
-						</div>
-					</div>
-
-					<div class="person-card">
-						<img src="/_app/assets/portraits/emanuel-mesquita.jpg" alt="">
-						<div class="person-info">
-							<p class="person-name">name</p>
-							<p class="person-position">position</p>
-						</div>
-					</div>
+					
 				</div>
 			</div>
 		</main>
+
+		<footer class="footer">
+			<div class="newsletter">
+				<h2 class="h2 footer__title newsletter__title">NEWSLETTER</h2>
+				<div class="newsletter__input-container">
+					<input class="newsletter__input-field" type="email">
+					<button class="newsletter__input-button primary-button--white-background">SEND</button>
+				</div>
+			</div>
+
+			<div class="social-media">
+				<h2 class="h2 footer__title social-media__title">SOCIAL MEDIA</h2>
+				<div class="social-media__icon-list">
+					<a href="https://www.facebook.com/nfacademy/">
+						<img class="social-media__icon" src="/_app/assets/Facebook Icon.svg" alt="Facebook Icon">
+					</a>
+					<a href="https://www.instagram.com/nf_academy/">
+						<img class="social-media__icon" src="/_app/assets/Instagram - Negative.svg" alt="Instagram Icon">
+					</a>
+				</div>
+			</div>
+
+			<div class="contact-us">
+				<h2 class="h2 footer__title contact-us__title">CONTACT US</h2>
+				<button class="contact-us__button primary-button--white-background">SEND REQUEST</button>
+			</div>
+		</footer>
 	</body>
 </html>
