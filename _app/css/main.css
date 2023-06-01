@@ -4,6 +4,7 @@
 @import 'base.css';
 
 @import './modules/header.css';
+@import './modules/footer.css';
 @import './modules/buttons.css';
 @import './modules/frontpage.css';
 @import './modules/person.css';
