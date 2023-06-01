@@ -44,7 +44,7 @@ The page is used with these technologies:
 
 You can visit the live page [here](https://ah-academy.netlify.app/).
 
-![Demo preview](https://raw.githubusercontent.com/Abdi199/Ahacademy/main/_app/assets/images/demo-preview.png?token=GHSAT0AAAAAAB7NXWTSFA72MWZL4OIWSIGGZDYKJ5A)
+![Demo preview](/_app/assets/images/demo-preview.png)
 
 
 
