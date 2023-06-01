@@ -1,18 +1,60 @@
 .header {
 	display: flex;
+	position: relative;
 	justify-content: space-between;
 	padding: 1.5rem 1rem;
 	background-color: transparent;
+	z-index: 10;
+}
+
+.header__logo-image {
+	width: 15rem;
 }
 
 .header__navigation {
 	display: flex;
 	justify-content: end;
 	align-items: center;
+	background-color: #fff;
 }
 
 .header__navigation-list {
 	display: flex;
 	gap: 1rem;
 	font-size: 3rem;
+}
+
+.header__menu-button {
+	display: none;
+	width: 4rem;
+	height: 4rem;
+	align-self: center;
+}
+
+@media screen and (max-width: 860px) {
+	.header__navigation {
+		display: none;
+	}
+
+	.header__navigation--open {
+		display: flex;
+	}
+
+	.header__menu-button {
+		display: block;
+	}
+
+	.header__navigation-list {
+		flex-direction: column;
+		gap: 4rem;
+		width: 100%;
+		padding: 2rem 0;
+	}
+
+	.header__navigation {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+	}
 }
