@@ -10,7 +10,7 @@ export default function header() {
 	function handleButtonClick() {
 		isOpen = !isOpen;
 		renderHTML();
-	}
+	};
 	
 	function renderHTML() {
 		renderNavigation();
@@ -23,15 +23,15 @@ export default function header() {
 			} else {
 				buttonIcon.src = '/_app/assets/svg/menu.svg';
 				buttonIcon.alt = 'Open menu';
-			}
-		}
+			};
+		};
 
 		function renderNavigation() {
 			if (isOpen) {
 				navigation.classList.add('header__navigation--open');
 			} else {
 				navigation.classList.remove('header__navigation--open');
-			}
-		}
-	}
-}
+			};
+		};
+	};
+};

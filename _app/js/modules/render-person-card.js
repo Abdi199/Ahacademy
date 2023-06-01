@@ -16,7 +16,7 @@ export default function renderPersonCard(person) {
 	personName.innerText = `${person.name}`.toUpperCase();
 	personPosition.innerText = `${person.position}`;
 
-	cardListContainer.append(personCard)
-	personCard.append(personImage, personInfoContainer)
-	personInfoContainer.append(personName, personPosition)
-}
+	cardListContainer.append(personCard);
+	personCard.append(personImage, personInfoContainer);
+	personInfoContainer.append(personName, personPosition);
+};

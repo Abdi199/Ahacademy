@@ -12,14 +12,14 @@ const coaches = await getAllCoaches();
 
 if (window.location.pathname === '/players/') {
 	players.forEach(person => {
-		renderPersonCard(person)
+		renderPersonCard(person);
 	});
 	getBySearch(players);
-}
+};
 
 if (window.location.pathname === '/coaches/') {
 	coaches.forEach(person => {
-		renderPersonCard(person)
+		renderPersonCard(person);
 	});
 	getBySearch(coaches);
-}
+};
