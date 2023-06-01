@@ -2,24 +2,14 @@ export default function getBySearch(persons) {
 	const personList = persons;
 
 	const searchField = document.querySelector('.search-input');
-	const searchButton = document.querySelector('.search-button');
 
 	if (searchField) {
 		searchField.addEventListener('keyup', handleInputSearch);
 	}
 
-	if (searchButton) {
-		searchButton.addEventListener('click', handleButtonSearch);
-	}
-
 	function handleInputSearch() {
 		const searchValue = getSearchValue()
 		debounce(sortListBySearch(searchValue), 300)
-	}
-
-	function handleButtonSearch() {
-		const searchValue = getSearchValue()
-		sortListBySearch(searchValue);
 	}
 	
 	function sortListBySearch(search) {
